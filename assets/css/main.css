@@ -3513,9 +3513,12 @@ input, select, textarea {
 
 	}
 /* Header */
-	#headshot{
-		border-radius: 50%;
-	}
+#headshot{
+	border-radius: 50%;
+}
+.socials{
+	margin: 0;
+}
 /* Section One */
 #sectionOneText {
 	width: 100%;
