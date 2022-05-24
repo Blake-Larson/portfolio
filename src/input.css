@@ -34,6 +34,6 @@ a:hover {
 
 .button-ease:hover {
   @apply scale-110;
-  @apply bg-rose-100;
-  @apply text-slate-800;
+  @apply text-lg;
+  @apply text-white;
 }

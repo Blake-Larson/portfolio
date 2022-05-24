@@ -512,14 +512,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
 .bottom-10 {
   bottom: 2.5rem;
 }
@@ -534,10 +526,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .m-5 {
   margin: 1.25rem;
-}
-
-.m-0 {
-  margin: 0px;
 }
 
 .my-10 {
@@ -588,12 +576,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
 .h-10 {
   height: 2.5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
 }
 
 .w-6 {
@@ -741,16 +729,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-slate-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t {
@@ -957,10 +935,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 1;
 }
 
-.opacity-90 {
-  opacity: 0.9;
-}
-
 .opacity-80 {
   opacity: 0.8;
 }
@@ -993,16 +967,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 1000ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .custom-menu-item:hover {
@@ -1049,10 +1015,10 @@ a:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 228 230 / var(--tw-bg-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-100:hover {
