@@ -1,122 +1,306 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Blake Larson</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Website developer">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-		<link rel="manifest" href="assets/favicon_io/site.webmanifest">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<div class="container imp-medium">
-						<div class="row aln-center">
-							<div class="col-3 col-4-xsmall">
-								<span class="image fit"><img src="images/headshot.jpg" alt="" id="headshot" /></span>
-							</div>	
-						</div>
-					</div>
-					<h1>Hi, I'm Blake,</h1>
-					<span class="sub">a Software Engineer.</span>
-					<p>Let's build a website together!</p>
-					<ul class="actions special">
-						<li><a href="site.html" class="button scrolly">Need a Site?</a></li>
-					</ul>
-					<ul class="icons socials">
-						<li><a href="https://twitter.com/Blars_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.linkedin.com/in/blakelarson-dev" class="icon brands alt fa-linkedin"><span class="label">Linked In</span></a></li>
-						<li><a href="https://github.com/Blake-Larson" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="mailto:Blarson224@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-			</section>
+    <!-- CSS -->
+    <link href="/styles/output.css" rel="stylesheet" />
 
-		<!-- One -->
-			<section id="work" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>My work</h2>
-					</header>
-					<p>Here are some of my latest projects for you to browse.</p>
-					<div class="row aln-center">
-						<div class="col-4 col-8-medium col-10-xsmall">
-							<span class="image fit"><img src="images/aroma.jpg" alt="" /></span>
-							<h3>Aroma Coffee</h3>
-							<ul class="actions special">
-								<li><a href="https://aroma-coffee.netlify.app/" target="_blank" class="button">Visit Site</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-		<!-- Two -->
-			<section id="one" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6-medium col-10-xsmall" id="sectionOneText">
-							<header class="major">
-								<h2>About Me</h2>
-							</header>
-							<p>
-								As a Santa Rosa native, I grew up hiking with my family and have never stopped admiring the outdoors. I'm looking to make my mark on the world by developing software to help the fight against climate change.
-							</p>
-							<p>
-								With a background in music education and performance, I know what it's like to organize and collaborate with people to create something meaningful together. Whether it's working through daily problems or creating the next best app, I love working on teams that support each other to reach a better outcome.
-							</p>
-						</div>
-						
-					</div>
-				</div>
-			</section>
-			
-		<!-- Three -->
-			<section id="four" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>Find me locally in Santa Rosa, CA</h2>
-					</header>
-					<p>When I'm not building websites you'll find me outside exploring with my wife and dog, playing disc golf, or singing with my friends!</p>
-					<div class="row aln-center">
-						<div class="col-4 col-8-medium col-10-xsmall">
-							<span class="image fit"><img src="images/disc.jpg" alt=""/></span>
-						</div>
-						<div class="col-4 col-8-medium col-10-xsmall">
-							<span class="image fit"><img src="images/camp.jpg" alt=""/></span>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/46f093b2f1.js" crossorigin="anonymous"></script>
 
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="https://twitter.com/Blars_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://www.linkedin.com/in/blakelarson-dev" class="icon brands alt fa-linkedin"><span class="label">Linked In</span></a></li>
-					<li><a href="https://github.com/Blake-Larson" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:Blarson224@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Blake Larson 2022</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</section>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Social Media -->
 
-	</body>
+    <!-- Essential -->
+    <meta property="og:title" content="Blake Larson Dev" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:url" content="https://Blakelarson.dev" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Recommended -->
+    <meta property="og:description" content="Let's build a website together!" />
+    <meta property="og:site_name" content="Blakelarson.dev" />
+    <meta name="twitter:image:alt" content="/images/social.jpg" />
+
+    <!-- Analytics -->
+    <meta property="fb:app_id" content="your_app_id" />
+    <meta name="twitter:site" content="@website-username" />
+
+    <!-- Document Title -->
+    <title>Blake Larson</title>
+  </head>
+  <body class="font-sans">
+    <!-- Navigation -->
+    <header class="bg-gradient-to-t from-rose-50 to-slate-700 text-white">
+      <nav
+        class="flex justify-between pb-5 px-10 duration-2000 relative transform transition-all translate-y-0 ease-out delay-2000 opacity-0"
+        data-replace='{ "translate-y-0": "translate-y-5", "opacity-0" : "opacity-100" }'
+      >
+        <ul class="hidden md:flex flex-row gap-5 align-middle items-center">
+          <li class="custom-menu-item"><a href="index.html">Home</a></li>
+          <li class="custom-menu-item">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="custom-menu-item"><a href="#">Resume</a></li>
+        </ul>
+
+        <!-- <a href="#" class="flex flex-row align-middle items-center">Logo</a> -->
+        <button class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+
+        <a
+          href="#contact"
+          class="hidden md:flex px-7 py-4 text-slate-800 bg-white rounded-2xl font-bold"
+          >Contact</a
+        >
+      </nav>
+
+      <!-- Landing -->
+      <div
+        class="container flex flex-col md:flex-row-reverse align-middle items-center gap-10 py-5 md:py-16"
+      >
+        <div
+          class="md:w-1/2 duration-1000 relative transform transition-all translate-x-12 ease-out delay-300 opacity-0"
+          data-replace='{ "translate-x-12": "translate-x-0", "opacity-0" : "opacity-100" }'
+        >
+          <h1 class="text-5xl text-center md:text-6xl md:text-left py-3 font-poppins">
+            Creativity<br />
+            meets<br />
+            Technology
+          </h1>
+          <div
+            class="p-5 text-slate-800 text-lg text-center md:px-0 md:text-xl md:text-left md:w-3/5"
+          >
+            <span
+              >As a developer, my strength lies behind the scenes making a website look great, work
+              fast, and perform well with a seamless user experience.</span
+            >
+          </div>
+        </div>
+        <div
+          class="w-2/3 md:w-1/2 flex justify-end duration-1000 relative transform transition-all delay-500 opacity-0"
+          data-replace='{"opacity-0" : "opacity-100" }'
+        >
+          <img class="rounded-2xl w-80 shadow-2xl" src="/images/headshot.jpg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Build Together -->
+    <div class="bg-gradient-to-b from-rose-50 to-white py-5 md:px-10 md:pb-10">
+      <div
+        class="container flex justify-center duration-2000 relative transform transition-all translate-y-5 ease-out delay-2000 opacity-0"
+        data-replace='{ "translate-y-5": "translate-y-0", "opacity-0" : "opacity-100" }'
+      >
+        <div class="md:w-2/3 text-center">
+          <h2 class="text-4xl custom-header">Let's build together!</h2>
+          <p class="px-3 text-lg text-center md:text-xl">
+            Give your visitors more value with a modern website. A beautiful, user-friendly website
+            allows you to focus on what really matters. Find more time to spend on your customers,
+            clients, or community while sharing your brand.
+          </p>
+          <div class="pt-10 pb-5">
+            <a href="#services" class="px-5 py-3 bg-slate-800 text-white rounded-2xl button-ease"
+              >My Services</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="w-100 px-3 md:px-10 bg-slate-100">
+      <div
+        class="container flex flex-col py-5 md:flex-row md:justify-center md:align-middle md:items-center md:gap-10 md:py-10"
+      >
+        <div class="md:w-1/2">
+          <span class="text-slate-800 uppercase">About</span>
+          <h2 class="text-4xl custom-header">I am a man of many hobbies...</h2>
+          <p class="py-2 text-justify">
+            I love finding new things to dive into. Throughout the years two fields have always
+            stuck with me: I love singing and creating music and I love tech and how its facets have
+            shaped our world. I decided to get a degree in music education and began teaching
+            private lessons out of college.
+          </p>
+          <p class="py-2 text-justify">
+            The pandemic brutally shifted how I had to operate and I ran into many technological
+            barriers to my teaching. I decided to learn JavaScript to build better tools for myself
+            and my students. This reinvigorated my love of tech through coding and pushed me to
+            spend more time on my projects. I have since transitioned to freelancing as a web
+            developer and love to build websites and web apps for clients.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:w-1/2">
+          <div class="flex flex-col md:flex-row-reverse py-5">
+            <div class="w-2/3 md:w-1/2 flex self-center">
+              <img
+                class="border-slate-400 border-2 shadow-2xl rounded-full"
+                src="/images/camp-square.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex md:flex-col md:w-1/2">
+              <div class="px-3 flex w-1/2 md:px-0 md:w-3/5 md:self-end">
+                <img
+                  class="border-slate-400 border-2 shadow-2xl rounded-full"
+                  src="/images/dgolf-square.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="px-3 flex w-1/2 md:px-0 md:w-1/2 md:self-center">
+                <img
+                  class="border-slate-400 border-2 shadow-2xl rounded-full"
+                  src="/images/layla-square.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <p class="p-3 md:p-5 text-center">
+            When I'm not building websites you'll find me outside exploring with my wife and dog,
+            playing disc golf, or singing with my friends!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+
+    <div class="px-5 lg:px-10">
+      <div
+        id="services"
+        class="container flex flex-col md:align-middle md:items-center py-10 text-center"
+      >
+        <span class="text-slate-800 uppercase">Skills</span>
+        <h2 class="custom-header text-3xl md:text-4xl">Ways that I can help</h2>
+
+        <div class="flex flex-col md:flex-row pb-10">
+          <div class="md:w-1/3 flex flex-col items-center h-full px-2 lg:px-5">
+            <img src="/icons/conversation.png" alt="" class="w-1/2 md:w-1/3 m-5" />
+            <h3 class="text-2xl custom-header">Consultation</h3>
+            <p>
+              Share all of your website goals and aspirations. We will work together to create the
+              best solution for your needs.
+            </p>
+          </div>
+          <div class="h-px bg-slate-800 w-2/3 flex self-center my-10 md:hidden"></div>
+          <div class="md:w-1/3 flex flex-col items-center h-full px-2 lg:px-5">
+            <img src="/icons/creation.png" alt="" class="w-1/2 md:w-1/3 m-5" />
+            <h3 class="text-2xl custom-header">Creation</h3>
+            <p>
+              I keep you in the loop with regular updates while I create your website with
+              accessibility standards and best-practice code.
+            </p>
+          </div>
+          <div class="h-px bg-slate-800 w-2/3 flex self-center my-10 md:hidden"></div>
+          <div class="md:w-1/3 flex flex-col items-center h-full px-2 lg:px-5">
+            <img src="/icons/delivery.png" alt="" class="w-1/2 md:w-1/3 m-5" />
+            <h3 class="text-2xl custom-header">Delivery</h3>
+            <p>
+              I will deliver a website that exceeds your expectations and brings your organization
+              to the next level.
+            </p>
+          </div>
+        </div>
+        <div class="pt-10 pb-5">
+          <a href="#" class="px-5 py-3 bg-slate-800 text-white rounded-2xl">Portfolio</a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="text-white bg-slate-800">
+      <!-- Contact -->
+      <div
+        id="contact"
+        class="container flex flex-col md:flex-row md:justify-center md:align-middle md:items-center md:py-16"
+      >
+        <div class="md:w-1/2 flex flex-col items-center py-5">
+          <h4 class="py-5 text-2xl font-poppins">Say hey:</h4>
+          <ul class="text-3xl flex flex-row gap-5">
+            <li>
+              <a href="https://twitter.com/Blars_"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/Blake-Larson"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/blakelarson-dev"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://angel.co/u/blake-larson-dev"
+                ><i class="fa-brands fa-angellist"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="h-px bg-white w-2/3 flex self-center my-10 md:hidden"></div>
+        <div class="md:w-1/2">
+          <h2 class="text-2xl text-center font-poppins py-2 md:py-5 md:text-3xl md:text-left">
+            Let's Work Together!
+          </h2>
+          <div class="">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              class="flex flex-col justify-start items-start px-5 md:py-5"
+            >
+              <label for="name" class="py-5">Your Name:</label>
+              <input class="h-8 p-4 text-black" type="text" name="name" id="name" />
+              <label for="email" class="py-5">Your Email:</label>
+              <input class="h-8 p-4 text-black" type="email" name="email" id="email" />
+              <label for="message" class="py-5">Message:</label>
+              <textarea
+                class="text-black p-3"
+                name="message"
+                id="message"
+                rows="5"
+                cols="33"
+              ></textarea>
+              <button
+                class="my-5 px-5 py-2 text-slate-800 bg-white rounded-2xl font-bold"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/scripts/main.js"></script>
+  </body>
 </html>
+
+<!--
+class="duration-1000 relative transform transition-all translate-x-12 ease-out delay-700 opacity-0" data-replace='{ "translate-x-12": "translate-x-0", "opacity-0" : "opacity-100" }'
+-->

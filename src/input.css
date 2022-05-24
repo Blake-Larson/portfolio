@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-menu-item:hover {
+  @apply border-b-2;
+  @apply border-slate-700;
+}
+
+.custom-header {
+  @apply text-slate-700;
+  @apply font-poppins;
+  @apply py-5;
+}
+
+a:hover {
+  @apply text-slate-400;
+}
+#it {
+  height: 400px;
+}
+.duration-2000 {
+  transition-duration: 2000ms;
+}
+.delay-2000 {
+  transition-delay: 2000ms;
+}
+.button-ease {
+  @apply duration-300;
+  @apply transition;
+  @apply ease-in-out;
+  @apply delay-150;
+}
+
+.button-ease:hover {
+  @apply scale-110;
+  @apply bg-rose-100;
+  @apply text-slate-800;
+}
