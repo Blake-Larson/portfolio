@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-menu-item:hover {
-  @apply border-b-2;
-  @apply border-slate-700;
-}
-
 .custom-header {
   @apply text-slate-700;
   @apply font-poppins;
@@ -37,3 +32,11 @@ a:hover {
   @apply text-lg;
   @apply text-white;
 }
+
+/* .fadeIn {
+  @apply duration-1000;
+  @apply transform;
+  @apply transition-all;
+  @apply delay-500;
+  @apply opacity-0";    
+} */

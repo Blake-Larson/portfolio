@@ -32,3 +32,21 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+let hamburger = document.querySelector('#hamburger');
+let cross = document.querySelector('#cross');
+let crossDiv = document.querySelector('#crossDiv');
+
+hamburger.addEventListener('click', dropDown);
+cross.addEventListener('click', exitMenu);
+
+function dropDown() {
+  hamburger.classList.add('hidden');
+  crossDiv.classList.remove('hidden');
+  crossDiv.classList.add('fadeIn');
+}
+function exitMenu() {
+  hamburger.classList.remove('hidden');
+  crossDiv.classList.add('hidden');
+  crossDiv.classList.remove('fadeIn');
+}

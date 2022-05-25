@@ -1,156 +1,252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- CSS -->
-	<link href="/styles/output.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="/styles/output.css" rel="stylesheet" />
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/46f093b2f1.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/46f093b2f1.js" crossorigin="anonymous"></script>
 
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/favicon/site.webmanifest">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
-	<!-- Social Media -->
+    <!-- Social Media -->
 
-		<!-- Essential -->
-		<meta property="og:title" content="Blake Larson Dev">
-		<meta property="og:type" content="article" />
-		<meta property="og:image" content="/images/social.jpg">
-		<meta property="og:url" content="https://Blakelarson.dev">
-		<meta name="twitter:card" content="summary_large_image">
+    <!-- Essential -->
+    <meta property="og:title" content="Blake Larson Dev" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:url" content="https://Blakelarson.dev" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-		<!-- Recommended -->
-		<meta property="og:description" content="Let's build a website together!">
-		<meta property="og:site_name" content="Blakelarson.dev">
-		<meta name="twitter:image:alt" content="/images/social.jpg">
+    <!-- Recommended -->
+    <meta property="og:description" content="Let's build a website together!" />
+    <meta property="og:site_name" content="Blakelarson.dev" />
+    <meta name="twitter:image:alt" content="/images/social.jpg" />
 
-		<!-- Analytics -->
-		<meta property="fb:app_id" content="your_app_id" />
-		<meta name="twitter:site" content="@website-username">
+    <!-- Analytics -->
+    <meta property="fb:app_id" content="your_app_id" />
+    <meta name="twitter:site" content="@website-username" />
 
-	<!-- Document Title -->
-	<title>Blake Larson</title>
+    <!-- Document Title -->
+    <title>Blake Larson</title>
+  </head>
+  <body class="font-sans">
+    <!-- Navigation -->
+    <header class="bg-slate-100 pt-5">
+      <nav class="hidden md:flex md:flex-row justify-between pb-5 px-10">
+        <ul class="flex-row gap-5 align-middle items-center md:flex">
+          <li class="hover:border-b-2 border-slate-700"><a href="index.html">Home</a></li>
+          <li class="hover:border-b-2 border-slate-700">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="hover:border-b-2 border-slate-700"><a href="#">Resume</a></li>
+        </ul>
+        <a href="#contact" class="md:flex px-7 py-4 bg-slate-800 text-white rounded-2xl font-bold"
+          >Contact</a
+        >
+      </nav>
+      <!-- Hamburger Menu -->
+      <button
+        id="hamburger"
+        class="m-2 p-2 fixed bg-slate-800 text-white rounded-lg z-30 opacity-80 hover:opacity-100 md:hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div id="crossDiv" class="hidden bg-white fixed z-40 w-screen top-0 left-0 md:hidden">
+        <button id="cross" class="px-5 pt-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="text-black h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
 
-</head>
-<body class="font-sans">
+        <ul class="flex flex-col items-center">
+          <li class="text-slate-800 py-5 text-lg"><a href="index.html">Home</a></li>
+          <li class="text-slate-800 py-5 text-lg">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="text-slate-800 py-5 text-lg"><a href="#">Resume</a></li>
+          <li>
+            <a
+              href="#contact"
+              class="px-5 py-3 mt-3 mb-10 inline-block bg-slate-800 text-white rounded-2xl font-bold"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
 
-  <!-- Navigation -->
-  <header class="">
-    <nav class="flex justify-end md:justify-between py-5 px-10">
-      <ul class="hidden flex-row gap-5 align-middle items-center md:flex">
-        <li class="custom-menu-item"><a href="index.html">Home</a></li>
-        <li class="custom-menu-item"><a href="portfolio.html">Portfolio</a></li>
-        <li class="custom-menu-item"><a href="#">Resume</a></li>
-      </ul>
-  
-      <!-- <a href="#" class="flex flex-row align-middle items-center">Logo</a> -->
-	  <button class="md:hidden">
-		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-			<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-		</svg>
-	  </button>
-  
-      <a href="#contact" class="hidden md:flex px-7 py-4 bg-slate-800 text-white rounded-2xl font-bold">Contact</a>
+      <!-- Landing -->
+      <div class="flex flex-col items-center text-center px-3 py-16">
+        <h1 class="text-4xl custom-header md:w-1/2">
+          Empowering people, organizations, and businesses through technology
+        </h1>
+        <p class="text-lg md:w-1/2">Creating engaging, purposeful, and creative websites.</p>
+      </div>
+    </header>
 
-    </nav>
-  
+    <!-- About -->
+    <div class="px-3 md:px-10">
+      <div
+        class="container flex flex-col py-5 md:flex-row md:justify-center md:align-middle md:items-center md:gap-10 md:py-10"
+      >
+        <div class="md:w-1/2">
+          <span class="text-slate-800 uppercase">Portfolio</span>
+          <h2 class="text-2xl md:text-4xl custom-header">
+            My goal is not to build a website.<br />
+            The goal is to build your business.
+          </h2>
+        </div>
 
-  <!-- Landing -->
-	<div class="bg-slate-100 flex flex-col items-center text-center px-3 py-16">
-		<h1 class="text-4xl custom-header md:w-1/2">Empowering people, organizations, and businesses through technology</h1>
-		<p class="text-lg md:w-1/2">Creating engaging, purposeful, and creative websites.</p>
-	</div>
+        <div class="md:w-1/2">
+          <p class="py-2 text-justify">
+            I believe that no matter the size, every business or organization needs a well designed
+            website. Whether it's to increase visibility, establish online presence, increase sales
+            and/or leads, nowadays having a website is crucial for the success of a business.
+          </p>
+          <p class="py-2 text-justify">
+            I enjoy being able to help people get a step closer to success by developing an
+            eye-catching and purposeful website. I have also helped clients with their logo and
+            setting up their social media profiles and Google Analytics and SEO.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-1 bg-slate-500 md:w-11/12 mx-auto my-8"></div>
 
-	  <!-- About -->
-	  <div class="px-3 md:px-10">
-		<div class="container flex flex-col py-5 md:flex-row md:justify-center md:align-middle md:items-center md:gap-10 md:py-10">
-		  <div class="md:w-1/2">
-			  <span class="text-slate-800 uppercase">Portfolio</span>
-			  <h2 class="text-2xl md:text-4xl custom-header">My goal is not to build a website.<br>
-				 The goal is to build your business.</h2>	  
-		  </div>
-  
-		  <div class="md:w-1/2">
-			<p class="py-2 text-justify">I believe that no matter the size, every business or organization needs a well designed website. Whether it's to increase visibility, establish online presence, increase sales and/or leads, nowadays having a website is crucial for the success of a business.
-			</p>
-			<p class="py-2 text-justify">I enjoy being able to help people get a step closer to success by developing an eye-catching and purposeful website. I have also helped clients with their logo and setting up their social media profiles and Google Analytics and SEO.</p>
-		  </div>
-		</div>
-	</div>
-	<div class="h-1 bg-slate-500 md:w-11/12 mx-auto my-8"></div>
+    <!-- Portfolio -->
+    <div class="">
+      <div class="container flex flex-col px-3 py-10 md:flex-row">
+        <div class="flex flex-col items-center md:w-1/2 md:border-r-2 md:border-slate-200">
+          <div class="flex flex-col py-5 text-center">
+            <a href="https://kdconciergept.com/" class="text-xl custom header pb-3 md:text-2xl"
+              >KD Concierge PT</a
+            >
+            <span>Karissa DeRousseau</span>
+          </div>
+          <div class="md:mx-5 xl:mx-16">
+            <a href="https://kdconciergept.com/"
+              ><img class="object-contain h-full" src="/images/kdconciergept.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="h-px bg-slate-200 my-10 md:hidden"></div>
+        <div class="flex flex-col items-center md:w-1/2">
+          <div class="flex flex-col py-5 text-center">
+            <a
+              href="https://aroma-coffee.netlify.app/"
+              class="text-xl custom header pb-3 md:text-2xl"
+              >Aroma Coffee</a
+            >
+          </div>
+          <div class="md:mx-5 xl:mx-16">
+            <a href="https://aroma-coffee.netlify.app/"
+              ><img class="object-contain h-full" src="/images/aroma.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- Portfolio -->
-	<div class="">
-		<div class="container flex flex-col px-3 py-10 md:flex-row">
-			<div class="flex flex-col items-center md:w-1/2 md:border-r-2 md:border-slate-200">
-				<div class="flex flex-col py-5 text-center">
-					<a href="https://kdconciergept.com/" class="text-xl custom header pb-3 md:text-2xl">KD Concierge PT</a>
-					<span>Karissa DeRousseau</span>
-				</div>
-				<div class="md:mx-5 xl:mx-16">
-					<a href="https://kdconciergept.com/"><img class="object-contain h-full" src="/images/kdconciergept.png" alt=""></a>
-				</div>
-			</div>
-			<div class="h-px bg-slate-200 my-10 md:hidden"></div>
-			<div class="flex flex-col items-center md:w-1/2">
-				<div class="flex flex-col py-5 text-center">
-					<a href="https://aroma-coffee.netlify.app/" class="text-xl custom header pb-3 md:text-2xl">Aroma Coffee</a>
-				</div>
-				<div class="md:mx-5 xl:mx-16">
-					<a href="https://aroma-coffee.netlify.app/"><img class="object-contain h-full" src="/images/aroma.png" alt=""></a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- Footer -->
+    <div class="text-white bg-slate-800">
+      <!-- Contact -->
+      <div
+        id="contact"
+        class="container flex flex-col md:flex-row md:justify-center md:align-middle md:items-center md:py-16"
+      >
+        <div class="md:w-1/2 flex flex-col items-center py-5">
+          <h4 class="py-5 text-2xl font-poppins">Say hey:</h4>
+          <ul class="text-3xl flex flex-row gap-5">
+            <li>
+              <a href="https://twitter.com/Blars_"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/Blake-Larson"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/blakelarson-dev"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://angel.co/u/blake-larson-dev"
+                ><i class="fa-brands fa-angellist"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="h-px bg-white w-2/3 flex self-center my-10 md:hidden"></div>
+        <div class="md:w-1/2">
+          <h2 class="text-2xl text-center font-poppins py-2 md:py-5 md:text-3xl md:text-left">
+            Let's Work Together!
+          </h2>
+          <div class="">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              class="flex flex-col justify-start items-start px-5 md:py-5"
+            >
+              <label for="name" class="py-5">Your Name:</label>
+              <input class="h-8 p-4 text-black" type="text" name="name" id="name" />
+              <label for="email" class="py-5">Your Email:</label>
+              <input class="h-8 p-4 text-black" type="email" name="email" id="email" />
+              <label for="message" class="py-5">Message:</label>
+              <textarea
+                class="text-black p-3"
+                name="message"
+                id="message"
+                rows="5"
+                cols="33"
+              ></textarea>
+              <button
+                class="my-5 px-5 py-2 text-slate-800 bg-white rounded-2xl font-bold"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-	<!-- Footer --> 
-	<div class="text-white bg-slate-800">
-		<!-- Contact -->
-		<div id="contact" class="container flex flex-col md:flex-row md:justify-center md:align-middle md:items-center md:py-16">
-			<div class="md:w-1/2 flex flex-col items-center py-5">
-				<h4 class="py-5 text-2xl font-poppins">Say hey:</h4>
-				<ul class="text-3xl flex flex-row gap-5">
-					<li><a href="https://twitter.com/Blars_"><i class="fa-brands fa-twitter"></i></a></li>
-					<li><a href="https://github.com/Blake-Larson"><i class="fa-brands fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/blakelarson-dev"><i class="fa-brands fa-linkedin"></i></a></li>
-					<li><a href="https://angel.co/u/blake-larson-dev"><i class="fa-brands fa-angellist"></i></a></li>
-				</ul>
-			</div>
-			<div class="h-px bg-white w-2/3 flex self-center my-10 md:hidden"></div>
-			<div class="md:w-1/2">
-				<h2 class="text-2xl text-center font-poppins py-2 md:py-5 md:text-3xl md:text-left">Let's Work Together!</h2>
-				<div class="">
-					<form name="contact" method="POST" data-netlify="true" class="flex flex-col justify-start items-start px-5 md:py-5">
-						<label for="name" class="py-5">Your Name:</label>
-						<input class="h-8 p-4 text-black" type="text" name="name" id="name">
-						<label for="email"class="py-5">Your Email:</label>
-						<input class="h-8 p-4 text-black " type="email" name="email" id="email">
-						<label for="message" class="py-5">Message:</label>
-						<textarea class="text-black p-3" name="message" id="message" rows="5" cols="33"></textarea>
-						<button class="my-5 px-5 py-2 text-slate-800 bg-white rounded-2xl font-bold" type="submit">Send</button>
-					</form>
-				</div>
-			</div>
-		</div>	
-	</div>
-
-	<!-- To Top Button -->
-	<button
-	id="top"
-	title="Go to top"
-	class="h-10 w-10 bg-slate-800 text-white fixed bottom-10 right-10 z-30 rounded-md border-white border opacity-80 hover:opacity-100"
-  >
-	<svg
+    <!-- To Top Button -->
+    <button
+      id="top"
+      title="Go to top"
+      class="h-10 w-10 bg-slate-800 text-white hidden fixed bottom-2 right-2 z-30 rounded-md border-white border opacity-80 hover:opacity-100"
+    >
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -159,9 +255,9 @@
       >
         <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
       </svg>
-  </button>
-		<!-- Scripts -->
-			<script src="#"></script>
+    </button>
 
-</body>
+    <!-- Scripts -->
+    <script src="/scripts/main.js"></script>
+  </body>
 </html>
