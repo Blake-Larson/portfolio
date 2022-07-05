@@ -32,11 +32,3 @@ a:hover {
   @apply text-lg;
   @apply text-white;
 }
-
-/* .fadeIn {
-  @apply duration-1000;
-  @apply transform;
-  @apply transition-all;
-  @apply delay-500;
-  @apply opacity-0";    
-} */
