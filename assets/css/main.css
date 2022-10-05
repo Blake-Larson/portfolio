@@ -1273,7 +1273,7 @@ button {
 	-ms-transition: -ms-transform 0.325s ease-in-out,
 		-ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-	background-image: url('../../images/bg.jpg');
+	background-image: url('../../images/main-bg.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1451,6 +1451,7 @@ body.is-preload #bg:before {
 	padding: 3rem 2rem;
 	max-height: 40rem;
 	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.35);
 }
 
 #header .content .inner > :last-child {
@@ -1498,7 +1499,9 @@ body.is-preload #bg:before {
 }
 
 #header nav ul li a:hover {
-	background-color: rgba(255, 255, 255, 0.075);
+	background-color: rgba(255, 255, 255, 0.575);
+	color: #000000;
+	font-weight: bold;
 }
 
 #header nav ul li a:active {

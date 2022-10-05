@@ -48,3 +48,11 @@
 		padding-left: 2rem;
 	}
 }
+
+.mt-2 {
+	margin-top: 2rem;
+}
+
+.normal-case {
+	text-transform: none !important;
+}
